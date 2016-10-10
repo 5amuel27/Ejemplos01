@@ -1,0 +1,41 @@
+</html>
+<head>
+    <title>PRUEBA#1</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="jquery-3.1.1.min.js"></script>
+    <style>
+    .Fondo{
+      background-image: url('Fondo1.jpg');
+    }
+    </style>
+</head>
+<body class="Fondo">
+    <script type="text/javascript">
+        function mouseOver1(evt) {
+            $("#" + evt.target.id).attr("class", "mouse_over1");
+        }
+        function mouseOver2(evt) {
+            $("#" + evt.target.id).attr("class", "mouse_over2");
+        }
+        function mouseOut1(evt) {
+                $("#" + evt.target.id).attr("class", "mouse_out1");
+        }
+        function mouseOut2(evt) {
+                $("#" + evt.target.id).attr("class", "mouse_out2");
+        }
+        function mouseClick(evt) {
+                alert(evt.target.id);
+        }
+    </script>
+</body>
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+	  width="595.28px" height="841.89px" viewBox="0 0 595.28 841.89" enable-background="new 0 0 595.28 841.89" xml:space="preserve">
+     <rect x="173.571" y="165" fill="#838383" stroke="#1D1D1B" stroke-miterlimit="10" width="257.143" height="255.945"/>
+     <rect x="236.926" y="200.714" fill="#00d1ff" stroke="#1D1D1B" stroke-miterlimit="10" width="121.428" height="75.714"/>
+     <circle id="SISTEM_ON" onclick="mouseClick(evt)" onmouseover="mouseOver1(evt)" onmouseout="mouseOut1(evt)" class ="mouse_out1" stroke-miterlimit="10" cx="236.926" cy="375" r="24.286"/>
+     <circle id="SISTEM_OFF" onclick="mouseClick(evt)" onmouseover="mouseOver2(evt)" onmouseout="mouseOut2(evt)" class ="mouse_out2" stroke-miterlimit="10" cx="358.354" cy="375" r="24.285"/>
+     <text transform="matrix(1 0 0 1 222.5 339.5)" font-family="'MyriadPro-Regular'" font-size="21">ON</text>
+     <text transform="matrix(1 0 0 1 345.0684 339.5)" font-family="'MyriadPro-Regular'" font-size="21">OFF</text>
+  </svg>
+</body>
+</html>
